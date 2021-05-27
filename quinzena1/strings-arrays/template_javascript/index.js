@@ -43,16 +43,33 @@ console.log("Carnes,", comidaUsuario,",Frutas, Barra de Proteina, Doces Fit")
 
 //Exercício 3
 
-const listaDeTarefas = []
-listaDeTarefas[0] = prompt("Digite a primeira tarefa a ser realizada") 
-listaDeTarefas[1] = prompt("Digite a segunda tarefa a ser realizada") 
-listaDeTarefas[2] = prompt("Digite a terceira tarefa a ser realizada") 
+let listaDeTarefas = []
+const listaDeTarefas1 = prompt("Digite a primeira tarefa a ser realizada") 
+const listaDeTarefas2 = prompt("Digite a segunda tarefa a ser realizada") 
+const listaDeTarefas3 = prompt("Digite a terceira tarefa a ser realizada") 
+listaDeTarefas.push(listaDeTarefas1, listaDeTarefas2, listaDeTarefas3)
 
 console.log(listaDeTarefas)
 
-const tarefaRealizada = Number(prompt("Digite a tarefa que foi realizada"))
-const removerDaLista = (listaDeTarefas[tarefaRealizada -1])
-listaDeTarefas.splice(0,1,2)
+const indice = prompt("Digite a tarefa que foi realizada")
+listaDeTarefas.splice(indice, 1)
+
 console.log(listaDeTarefas)
 
+//------------------------------------------------------------
 
+//Desafio
+
+//Desafio 1
+
+// const frase = prompt("Digite uma frase")
+// Array[frase.length] 
+
+// console.log(frase)
+
+// //Desafio 2
+
+// Array["Banana", "Morango", "Abacaxi", "Laranja", "Ameixa"]
+// const Array[2]
+
+// console.log(Array.length)
