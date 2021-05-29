@@ -68,11 +68,41 @@
 
 //Desafio
 
-var num1 = parseInt(prompt("Digite o primeiro numero: "))
-var num2 = parseInt(prompt("Digite o segundo numero: "))
+//var num1 = parseInt(prompt("Digite o primeiro numero: "))
+//var num2 = parseInt(prompt("Digite o segundo numero: "))
 
-let resultadoSoma = num1 + num2
-let resultadoMultiplicacao = num1 * num2
+//let resultadoSoma = num1 + num2
+//let resultadoMultiplicacao = num1 * num2
 
-console.log("O primeiro numero somado ao segundo numero, resulta em: ", resultadoSoma)
-console.log("O primeiro numero multiplicado pelo segundo numero, resulta em: ", resultadoMultiplicacao)
+//console.log("O primeiro numero somado ao segundo numero, resulta em: ", resultadoSoma)
+//console.log("O primeiro numero multiplicado pelo segundo numero, resulta em: ", resultadoMultiplicacao)
+
+
+
+//const nome = prompt("DIgite seu nome")
+//const cor = prompt("Digite sua cor favorita")
+
+//console.log(`a cor favorita de ${nome} e ${cor}`)
+//console.log("A cor favorite de " + nome + "e" + cor)
+
+
+
+//const frase = prompt("Digite uma frase")
+
+
+//console.log("Maiusculas", frase.toUpperCase())
+
+
+//let fraseNai = frase.replaceAll("a", "i")
+//console.log(fraseNai)
+//console.log(frase.length)
+
+
+
+
+const racas = ["rotwailler", "pit bull", "sao bernardo", "pintcher", "labrador"]
+const posicao = Number(prompt("Insira o numero escolhido da raca correspondente"))
+console.log(racas[posicao-1])
+
+
+
