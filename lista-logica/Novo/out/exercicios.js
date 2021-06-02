@@ -143,9 +143,25 @@ function checaRenovacaoRG() {
 // Exercício 11
 function checaAnoBissexto() {
   // escreva seu código aqui
+
+  const ano = Number(prompt("Digite um ano"))
+  const anoBissexto = (ano % 400 == 0) || (ano % 4 == 0 && ano % 100 != 0)
+
+  console.log(anoBissexto)
 }
 
 // Exercício 12
 function checaValidadeInscricaoLabenu() {
   // escreva seu código aqui
+
+  const idadeUsuario = prompt("Voce tem mais de 18 anos?")
+  const maiorDeIdade = idadeUsuario === "sim"
+  const ensinoMedio = prompt("Voce tem o ensino medio completo?")
+  const ensinoMedioCompleto = ensinoMedio === "sim"
+  const disponibilidade = prompt("Voce tem diponibilidade de horario exclusivo no momento do curso?")
+  const disponibilidadeHorario = disponibilidade === "sim"
+
+  const idadeNovoAluno = (idadeUsuario === "sim" && ensinoMedio === "sim" && disponibilidade === "sim")
+
+  console.log(idadeNovoAluno)
 }

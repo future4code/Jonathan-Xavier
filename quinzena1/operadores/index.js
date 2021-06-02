@@ -72,5 +72,10 @@
 // console.log("O segundo numero e divisivel pelo primeiro",divisao2)
 
 
+let tamanhoBase = prompt("Digite o tamanho da base do triangulo")
+let alturaTriangulo = prompt("Digite a altura do triangulo")
 
+let areaTriangulo = (tamanhoBase * alturaTriangulo) / 2
+
+console.log("A area do triangulo:", areaTriangulo)
 

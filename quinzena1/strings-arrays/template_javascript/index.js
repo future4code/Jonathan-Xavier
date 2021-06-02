@@ -73,3 +73,10 @@ console.log(listaDeTarefas)
 // const Array[2]
 
 // console.log(Array.length)
+
+const tamanhoBase = prompt("Digite o tamnho da base do triangulo")
+const alturaTriangulo = prompt("Digite a altura do triangulo")
+
+const areaTriangulo = (tamanhoBase * alturaTriangulo) / 2
+
+console.log("A area do triangulo:", areaTriangulo)
