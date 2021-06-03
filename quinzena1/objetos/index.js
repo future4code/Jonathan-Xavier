@@ -48,7 +48,7 @@ undefined: Imprime isso devido a propriedade altura não ter sido declarada, fic
 
 //1.
 
-//a.
+// //a.
 
 // const pessoa = {
 //     nome: "Jonathan",
@@ -73,11 +73,11 @@ undefined: Imprime isso devido a propriedade altura não ter sido declarada, fic
 
 // console.log(`Eu sou o ${frase.nome}, mas pode me chamar de: ${frase.apelidos}`)
 
-//-----------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------
 
-//2.
+// //2.
 
-//a.
+// //a.
 
 // const pessoa1 = {
 //     nome: "Fernanda",
@@ -101,36 +101,69 @@ undefined: Imprime isso devido a propriedade altura não ter sido declarada, fic
 // informacoesPessoais(pessoa1, pessoa2)    
 // console.log(["objetos.nome", "objetos.nome".length, "objetos.idade", "objetos.profissao", "objetos.profissao".length])
 
-//------------------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------------------
 
-//3.
+// //3.
 
 //a.
 
-const carrinho = []
+// const carrinho = []
 
-//b.
 
-const fruta1 = {
-    nome: "Morango",
-    disponibilidade: true,
+// //b.
+
+// const fruta1 = {
+//     nome: "Morango",
+//     disponibilidade: true,
+// }
+
+// const fruta2 = {
+//     nome: "Melancia",
+//     disponibilidade: true,
+// }
+
+// const fruta3 = {
+//     nome: "Melão",
+//     disponibilidade: true,
+// }
+
+// //c
+
+// function frutas(f1, f2, f3){
+// const fruteira = (fruta1, fruta2, fruta3)
+
+// return fruteira
+
+// }
+
+// frutas(fruta1, fruta2, fruta3)
+// carrinho.push(fruta1, fruta2, fruta3)
+// console.log(carrinho)
+
+
+//------------------------------------------------------------------------
+//------------------------------------------------------------------------
+//------------------------------------------------------------------------
+
+//DESAFIO
+
+//1.
+const nomePessoa = prompt("Qual seu nome?")
+const idadePessoa = prompt("Qual sua idade?")
+const profissaoPessoa = prompt("Qual sua profissão?")
+
+const dadosPessoa = {
+    nome: nomePessoa,
+    idade: idadePessoa,
+    profissao: profissaoPessoa,
 }
-
-const fruta2 = {
-    nome: "Melancia",
-    disponibilidade: true,
+function dados(information) {
+    const informacao = {
+    ...dadosPessoa,
+    }
+    return informacao
 }
+const dadosFinais = dados(dadosPessoa)
+console.log(${dadosPessoa.nome}, ${dados.idade}, {dados.profissao})
 
-const fruta3 = {
-    nome: "Melão",
-    disponibilidade: true,
-}
-
-//c
-
-function frutas(fruta1){
-carrinho.push(fruta1, fruta2, fruta3)
-
-}
-
-console.log(frutas)
+//2.
