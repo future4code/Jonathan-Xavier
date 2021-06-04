@@ -80,7 +80,11 @@
 // function recebeMensagem(frase){
 //    const fraseMaiuscula = frase.length + "" + frase.toUpperCase()
 //    return fraseMaiuscula
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> 7141c73ab789023590cac621d45af197d9080fcb
 // }
 
 // console.log(recebeMensagem(mensagem))
@@ -128,15 +132,25 @@
 //a)
 // const n1 = Number(prompt("Digite o primeiro número"))
 // const n2 = Number(prompt("Digite o segundo número"))
+<<<<<<< HEAD
 
 // const parametro = (funcao2) => { 
 
+=======
+  
+// const parametro = (funcao2) => { 
+   
+>>>>>>> 7141c73ab789023590cac621d45af197d9080fcb
 //    console.log(parametro)
 // }
 
 
 // //b)
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> 7141c73ab789023590cac621d45af197d9080fcb
 //  const funcao2 = (n1, n2) => {
 //  const soma = n1 + n2
 //    return soma
@@ -148,13 +162,56 @@
 //2)
 
 // function hipotenusa(cat1, cat2) {
+<<<<<<< HEAD
 
+=======
+   
+>>>>>>> 7141c73ab789023590cac621d45af197d9080fcb
 //    cat1 = Number(prompt("Digite um valor para o primeiro cateto"))
 //    cat2 = Number(prompt("Digite um valor para o segundo cateto"))
 
 //       const hip = Math.sqrt((cat1 * cat1) + (cat2 * cat2))
+<<<<<<< HEAD
 
 //          return hip
 // }
 
 // console.log(hipotenusa())
+=======
+   
+//          return hip
+// }
+
+// console.log(hipotenusa())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> 7141c73ab789023590cac621d45af197d9080fcb
