@@ -148,22 +148,45 @@ undefined: Imprime isso devido a propriedade altura não ter sido declarada, fic
 //DESAFIO
 
 //1.
-const nomePessoa = prompt("Qual seu nome?")
-const idadePessoa = prompt("Qual sua idade?")
-const profissaoPessoa = prompt("Qual sua profissão?")
+// const nomePessoa = prompt("Qual seu nome?")
+// const idadePessoa = prompt("Qual sua idade?")
+// const profissaoPessoa = prompt("Qual sua profissão?")
 
-const dadosPessoa = {
-    nome: nomePessoa,
-    idade: idadePessoa,
-    profissao: profissaoPessoa,
-}
-function dados(information) {
-    const informacao = {
-    ...dadosPessoa,
-    }
-    return informacao
-}
-const dadosFinais = dados(dadosPessoa)
-console.log(${dadosPessoa.nome}, ${dados.idade}, {dados.profissao})
+// const dadosPessoa = {
+//     nome: nomePessoa,
+//     idade: idadePessoa,
+//     profissao: profissaoPessoa,
+// }
+// function dados(information) {
+//     const informacao = {
+//     ...dadosPessoa,
+//     }
+//     return informacao
+// }
+// const dadosFinais = dados(dadosPessoa)
+// console.log(${dadosPessoa.nome}, ${dados.idade}, {dados.profissao})
+//----------------------------------------------------------------------------
 
-//2.
+//2. 
+// const filme1 = {
+//     nome: "Velozes e Furiosos",
+//     anoLancamento: 2000
+// }
+// const filme2 = {
+//     nome: "Velozes e Furiosos, desafio em Tokyo",
+//     anoLancamento: 1998
+// }
+// function comparaFilmes(){
+//     const filmes1 = filme1.anoLancamento < filme2.anoLancamento
+//     console.log("O primeiro filme foi lancado antes do segundo?", false)
+//     return  (filmes1)
+
+// }
+// function comparaFilmes2(){
+//     const filmes2 = filme1.anoLancamento == filme2.anoLancamento
+//     console.log("O primeiro filme foi lançado no mesmo ano do segundo?", true)
+//     return (filmes2)
+// }
+
+// comparaFilmes()
+// comparaFilmes2()
