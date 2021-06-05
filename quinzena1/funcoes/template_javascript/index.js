@@ -80,11 +80,6 @@
 // function recebeMensagem(frase){
 //    const fraseMaiuscula = frase.length + "" + frase.toUpperCase()
 //    return fraseMaiuscula
-
-// }
-
-// console.log(recebeMensagem(mensagem))
-
 //--------------------------------------------------
 
 //3)
@@ -128,9 +123,7 @@
 //a)
 // const n1 = Number(prompt("Digite o primeiro número"))
 // const n2 = Number(prompt("Digite o segundo número"))
-
 // const parametro = (funcao2) => { 
-
 //    console.log(parametro)
 // }
 
@@ -149,12 +142,6 @@
 
 // function hipotenusa(cat1, cat2) {
 
-//    cat1 = Number(prompt("Digite um valor para o primeiro cateto"))
-//    cat2 = Number(prompt("Digite um valor para o segundo cateto"))
-
-//       const hip = Math.sqrt((cat1 * cat1) + (cat2 * cat2))
-
-//          return hip
 // }
 
 // console.log(hipotenusa())
