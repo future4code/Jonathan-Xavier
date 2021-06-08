@@ -81,6 +81,7 @@
 //    const fraseMaiuscula = frase.length + "" + frase.toUpperCase()
 //    return fraseMaiuscula
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
   
@@ -89,6 +90,8 @@
 
 // console.log(recebeMensagem(mensagem))
 
+=======
+>>>>>>> 7e9fcf5aeb391041fa355c614424c88a4bbc13ba
 //--------------------------------------------------
 
 //3)
@@ -133,6 +136,7 @@
 // const n1 = Number(prompt("Digite o primeiro número"))
 // const n2 = Number(prompt("Digite o segundo número"))
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 // const parametro = (funcao2) => { 
 
@@ -141,16 +145,23 @@
 // const parametro = (funcao2) => { 
    
 >>>>>>> 7141c73ab789023590cac621d45af197d9080fcb
+=======
+// const parametro = (funcao2) => { 
+>>>>>>> 7e9fcf5aeb391041fa355c614424c88a4bbc13ba
 //    console.log(parametro)
 // }
 
 
 // //b)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
  
 >>>>>>> 7141c73ab789023590cac621d45af197d9080fcb
+=======
+
+>>>>>>> 7e9fcf5aeb391041fa355c614424c88a4bbc13ba
 //  const funcao2 = (n1, n2) => {
 //  const soma = n1 + n2
 //    return soma
@@ -162,6 +173,7 @@
 //2)
 
 // function hipotenusa(cat1, cat2) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 =======
@@ -215,3 +227,9 @@
 
 
 >>>>>>> 7141c73ab789023590cac621d45af197d9080fcb
+=======
+
+// }
+
+// console.log(hipotenusa())
+>>>>>>> 7e9fcf5aeb391041fa355c614424c88a4bbc13ba
