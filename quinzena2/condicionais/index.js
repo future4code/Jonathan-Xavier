@@ -113,6 +113,7 @@
 
 //DESAFIOS
 
+<<<<<<< HEAD
 // let generoFilme = prompt("Qual o genero do filme que vamos assistir?")
 // let precoIngresso = Number(prompt("Qual o valor do ingresso desse filme?"))
 // let snack = prompt("Qual snack quer compar para ver o filme?")
@@ -126,3 +127,18 @@
 //     console.log("Escolha outro filme :(")
 // }
 //  console.log(pelicula)
+=======
+let generoFilme = prompt("Qual o genero do filme que vamos assistir?")
+let precoIngresso = Number(prompt("Qual o valor do ingresso desse filme?"))
+let snack = prompt("Qual snack quer compar para ver o filme?")
+
+function pelicula(teste) {
+    if (generoFilme = "Fantasia")
+    console.log("Bom filme!")
+}else if (precoIngresso < 15) {
+    console.log("Bom filme!")
+}else{
+    console.log("Escolha outro filme :(")
+}
+ console.log(pelicula)
+>>>>>>> e4eef269ce39b78ea2fd9908b461cfc5fbf2b6c5
