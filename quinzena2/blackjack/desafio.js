@@ -11,3 +11,29 @@
  * 
  */
 
+    console.log("Bem vindo ao jogo Blackjack")
+
+    if(confirm("Quer iniciar uma nova rodada?")) {
+      console.log("Iniciando partida")// o que fazer se o usuário clicar "ok"
+   } else {
+      console.log("O jogo acabou!")// o que fazer se o usuário clicar "cancelar"
+   }
+
+   const carta = comprarCarta(); //Sorteia uma carta
+   const carta2 = comprarCarta();
+   const carta3 = comprarCarta();
+
+    console.log("Cartas Usuário:", carta.texto + carta2.texto + carta3.texto, "pontuação:", carta.valor + carta2.valor + carta3.valor) // imprime o naipe da carta e valor da carta do usuário
+  
+    // Cartas do computador
+    console.log("Cartas computador:", carta3.texto, "pontuação:", carta3.valor)
+   
+   if (carta.valor > carta2.valor) {
+      console.log("o Usuário ganhou!");
+   }if (carta.valor < carta2.valor) {
+      console.log("o computador ganhou!");
+   }if (carta.valor === carta2.valor) {
+      console.log("Empate!")
+   }
+
+   if (carta.texto)
