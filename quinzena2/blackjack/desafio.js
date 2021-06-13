@@ -11,13 +11,11 @@
  * 
  */
 
-  console.log("Bem vindo ao jogo Blackjack")
+  alert("Bem vindo ao jogo Blackjack")
     
     let jogo = confirm("Quer iniciar uma nova rodada?")
-    let carta1Usuario = comprarCarta()
-    let carta2Usuario = comprarCarta()
-    let carta1Pc = comprarCarta()
-    let carta2Pc = comprarCarta()
+    let cartasUsuario = []
+    let cartasPc = []
 
     if (jogo) {
        let carta1Usuario = comprarCarta()
