@@ -21,6 +21,7 @@
        let carta1Pc = comprarCarta()
        let carta2Pc = comprarCarta()
 
+
        let pontuacaoUsuario = carta1Usuario.valor + carta2Usuario.valor
        let pontuacaoPc = carta1Pc.valor + carta2Pc.valor
 
