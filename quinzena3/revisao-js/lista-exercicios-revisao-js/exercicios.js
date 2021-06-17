@@ -6,6 +6,7 @@ function inverteArray(array) {
 // EXERCÍCIO 02
 function retornaNumerosParesElevadosADois(array) {
   let numPares = []
+  
   for (let i = 0; i < array.length; i++) {
     if (array[i] % 2 === 0) {
       numPares.push(array[i] ** 2)
@@ -16,7 +17,14 @@ function retornaNumerosParesElevadosADois(array) {
 
 // EXERCÍCIO 03
 function retornaNumerosPares(array) {
-
+  let numPares = []
+  
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] % 2 === 0) {
+      numPares.push(array[i])
+    }
+  }
+  return numPares
 }
 
 // EXERCÍCIO 04
