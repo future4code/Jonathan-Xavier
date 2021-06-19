@@ -96,7 +96,19 @@ function comparaDoisNumeros(num1, num2) {
 }
 // EXERCÍCIO 10
 function segundoMaiorEMenor(array) {
-
+  for (let i = 0; i <= array.length -1; i++) {
+    for (let l = i; + 1 <= array.length; l++) {
+      if (array[i] > array[l]) {
+        let x = array[i]
+        array[i] = array[l]
+        array[l] = x
+      }
+    }
+  }
+        let arrayNova = []
+        arrayNova.push(array[array.length-2])
+        arrayNova.push(array[1])
+        return arrayNova
 }
 
 // EXERCÍCIO 11
