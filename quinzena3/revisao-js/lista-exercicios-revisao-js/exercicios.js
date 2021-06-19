@@ -65,33 +65,35 @@ function retornaNNumerosPares(n) {
 
 // EXERCÍCIO 08
 function checaTriangulo(a, b, c) {
-  // return 'Escaleno'
-  // return 'Equilátero'
-  // return 'Isósceles'
 
-
-if (a === b && b === c && c === a) {
+  if (a === b && b === c && c === a) {
   return `Equilátero`
 } else if (a === b && a !== c){
   return "Isósceles"
 } else {
   return 'Escaleno'
 }
-
-
-
 }
 
 // EXERCÍCIO 09
 function comparaDoisNumeros(num1, num2) {
-  // Formato do objeto a ser retornado:
-  // {
-  //   maiorNumero: X,
-  //   maiorDivisivelPorMenor: Y,
-  //   diferenca: Z
-  // }
+  const comparacaoDosNumeros = {
+    maiorNumero: Math.max(num1, num2),
+    maiorDivisivelPorMenor: false,
+    diferenca: Math.abs(num1 - num2)
 }
+  if (num1 >= num2) {
+    comparacaoDosNumeros.maiorNumero
+    comparacaoDosNumeros.maiorDivisivelPorMenor = (num1 % num2 === 0)
+    comparacaoDosNumeros.diferenca
+  } else if (num2 > num1) {
+    comparacaoDosNumeros.maiorNumero
+    comparacaoDosNumeros.maiorDivisivelPorMenor = (num2 % num1 === 0)
+    comparacaoDosNumeros.diferenca
+  }
 
+  return comparacaoDosNumeros
+}
 // EXERCÍCIO 10
 function segundoMaiorEMenor(array) {
 
