@@ -247,12 +247,50 @@ function retornaPessoasNaoAutorizadas(pessoas) {
 
 // EXERCÍCIO 19A
 function ordenaPorNome(consultasNome) {
+  let verificarVerdade = false;
+  while (!verificarVerdade) {
+    verificarVerdade = true;
+    for (let i = 0; i < consultasNome.length - 1; i++) {
+      let proximoNome = consultasNome[i + 1].nome
+      let comparaInicial = (consultasNome[i].nome).localeCompare(proximoNome)
+      if (comparaInicial === 1) {
+        verificarVerdade = false;
+        let aux = consultasNome[i + 1];
+        consultasNome[i + 1] = consultasNome[i];
+        consultasNome[i] = aux;
+      }
+    }
+  }
+  return consultasNome;
 
 }
 
 // EXERCÍCIO 19B
 function ordenaPorData(consultasData) {
-
+  function mudaData (inputData) {
+    const quebraPalavra = inputData.split(`/`)
+    let dia = quebraPalavra[0]
+    let mes = quebraPalavra[1]
+    let ano = quebraPalavra[2]
+    let final = [ano, mes, dia]
+    return final
+  }
+  
+  let verificarVerdade = false;
+  while (!verificarVerdade) {
+    verificarVerdade = true;
+    for (let i = 0; i < consultasData.length - 1; i++) {
+      let dataAntes = new Date(mudaData(consultasData[i].dataDaConsulta))
+      let dataSeguinte = new Date(mudaData(consultasData[i + 1].dataDaConsulta))
+      if (dataSeguinte < dataAntes) {
+        verificarVerdade = false;
+        let aux = consultasData[i + 1];
+        consultasData[i + 1] = consultasData[i];
+        consultasData[i] = aux;
+      }
+    }
+  }
+  return consultasData;
 }
 
 // EXERCÍCIO 20
