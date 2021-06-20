@@ -96,25 +96,52 @@ function comparaDoisNumeros(num1, num2) {
 }
 // EXERCÍCIO 10
 function segundoMaiorEMenor(array) {
-  for (let i = 0; i <= array.length -1; i++) {
-    for (let l = i; + 1 <= array.length; l++) {
-      if (array[i] > array[l]) {
-        let x = array[i]
-        array[i] = array[l]
-        array[l] = x
-      }
+  maior = array[0]
+  menor = array[0] * array[1]
+  segundoMaior = array[0]
+  segundoMenor = array[0]
+  for (numeros of array) {
+    if (numeros > maior) {
+      segundoMaior = maior
+      maior = numeros
+    } else if (numeros < menor) {
+      segundoMenor = menor
+      menor = numeros
     }
   }
-        let arrayNova = []
-        arrayNova.push(array[array.length-2])
-        arrayNova.push(array[1])
-        return arrayNova
+  if (array.length === 2) {
+    segundoMaior = menor
+    segundoMenor = maior
+  } else if (array.length === 3) {
+    let media = 0
+    for (numeros2 of array) {
+      if ((numeros2 > menor) && (numeros2 < maior)) {
+        media = numbers2
+      }
+      segundoMaior = media
+      segundoMenor = media
+    }
+  }
+  return [segundoMaior, segundoMenor]
 }
 
 // EXERCÍCIO 11
 function ordenaArray(array) {
-
+  let ordenaTroca = true
+  while (ordenaTroca === true) {
+    ordenaTroca = false
+    for (let i = 0; i < array.length; i++) {
+      if (array[i] > array[i + 1]) {
+        let aux = array[i]
+        array[i] = array[i + 1]
+        array[i + 1] = aux
+        ordenaTroca = true
+      }
+    }
+  }
+  return array
 }
+
 
 // EXERCÍCIO 12
 function filmeFavorito() {
