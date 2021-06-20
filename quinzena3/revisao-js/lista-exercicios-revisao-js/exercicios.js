@@ -275,7 +275,7 @@ function ordenaPorData(consultasData) {
     let final = [ano, mes, dia]
     return final
   }
-  
+
   let verificarVerdade = false;
   while (!verificarVerdade) {
     verificarVerdade = true;
@@ -295,5 +295,13 @@ function ordenaPorData(consultasData) {
 
 // EXERCÍCIO 20
 function calculaSaldo(contas) {
-
+for (let i = 0; i < contas.length; i++){
+    let somaContas
+    somaContas = 0
+    for (creditos of contas[i].compras){
+      somaContas += Number(creditos)
+    }
+    contas[i].saldoTotal = contas[i].saldoTotal - somaContas
+  }
+  return contas
 }
