@@ -227,12 +227,22 @@ function verificaParidade(array) {
 
 // EXERCÍCIO 18A
 function retornaPessoasAutorizadas(pessoas) {
-
+  const permitirPessoas = pessoas.filter((requisitos) => {
+    if ((requisitos.altura >= 1.5) && (requisitos.idade > 14) && (requisitos.idade < 60)) {
+      return requisitos
+    }
+  })
+  return permitirPessoas
 }
 
 // EXERCÍCIO 18B
 function retornaPessoasNaoAutorizadas(pessoas) {
-
+  const naoPermitirPessoas = pessoas.filter((requisitos) => {
+    if (!((requisitos.altura >= 1.5) && (requisitos.idade > 14) && (requisitos.idade < 60))) {
+      return requisitos
+    }
+  })
+  return naoPermitirPessoas
 }
 
 // EXERCÍCIO 19A
