@@ -172,7 +172,11 @@ const medidasRetangulo = {
 
 // EXERCÍCIO 15
 function anonimizaPessoa(pessoa) {
-
+  const dadosDaPessoa = {
+    ...pessoa,
+    nome: 'ANÔNIMO'
+  }
+  return dadosDaPessoa
 }
 
 // EXERCÍCIO 16A
