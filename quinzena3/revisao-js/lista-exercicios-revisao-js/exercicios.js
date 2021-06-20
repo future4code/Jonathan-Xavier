@@ -65,7 +65,6 @@ function retornaNNumerosPares(n) {
 
 // EXERCÍCIO 08
 function checaTriangulo(a, b, c) {
-
   if (a === b && b === c && c === a) {
   return `Equilátero`
 } else if (a === b && a !== c){
@@ -161,13 +160,13 @@ function imprimeChamada() {
 
 // EXERCÍCIO 14
 function criaRetangulo(lado1, lado2) {
-const medidasRetangulo = {
-  largura: lado1,
-  altura: lado2,
-  perimetro: (lado1 + lado2) * 2,
-  area: lado1 * lado2
-}
-  return  medidasRetangulo
+  const medidasRetangulo = {
+    largura: lado1,
+    altura: lado2,
+    perimetro: (lado1 + lado2) * 2,
+    area: lado1 * lado2
+  }
+    return  medidasRetangulo
 }
 
 // EXERCÍCIO 15
@@ -198,17 +197,32 @@ function menoresDe18(arrayDePessoas) {
 
 // EXERCÍCIO 17A
 function multiplicaArrayPor2(array) {
-
-}
+  const arrayMultiplicacao = array.map((numeros) => {
+    return numeros * 2
+  })
+  return arrayMultiplicacao
+  }
 
 // EXERCÍCIO 17B
 function multiplicaArrayPor2S(array) {
+  const arrayMultiplicacao = multiplicaArrayPor2(array)
+  const arrayMultiplicacao2 = arrayMultiplicacao.map((numeros) => {
+    return numeros.toString()
+    })
+    return arrayMultiplicacao2
 
 }
 
 // EXERCÍCIO 17C
 function verificaParidade(array) {
-
+  const parImpar = array.map((paridade) => {
+    if (paridade % 2 === 0) {
+      return `${paridade} é par`
+    } else {
+      return `${paridade} é ímpar`
+    }
+  })
+  return parImpar
 }
 
 // EXERCÍCIO 18A
