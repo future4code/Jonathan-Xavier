@@ -1,0 +1,16 @@
+h1 {
+    color: blueviolet;
+    margin-top: 25px;
+    margin-left: 350px;
+}
+
+div {
+    background-color: lavender;
+}
+
+p#bordao {
+    margin-left: 365px;
+    margin-right: 440px;
+    padding: 10px;
+    border: solid 3px green;
+}
