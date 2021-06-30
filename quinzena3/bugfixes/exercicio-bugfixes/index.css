@@ -34,7 +34,7 @@ div>p:first-child {
 }
 
 div img {
-    background: white;
+    background: white;  
 }
 
 .botao-amarelo {
@@ -113,6 +113,14 @@ td button {
     height: 30px;
     border-radius: 5px;
     color: black;
+}
+
+td button:hover {
+    background-color: #f5cd1c;
+}
+
+td button:focus {
+    background-color: white;
 }
 
 .container-do-search {
