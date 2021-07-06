@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-left: 12px;
+}
+input {
+    margin-right: 12px;
+}
+header {
+    display: flex;
+    background-color: orange;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main {
+    display: grid;
+}
+
+.videos li {
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    background-color: orange;
+    align-items: center;
+    justify-content: center;
+}
