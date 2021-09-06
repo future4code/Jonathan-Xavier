@@ -1,40 +1,30 @@
-import React from "react"
+import React, { useState } from "react"
 import { HomePage } from "./pages/HomePage/HomePage"
 import { MatchesPage } from "./pages/MatchesPage/MatchesPage"
-import styled from "styled-components";
 
-const homePageDesign = styled.div`
-    background-color: violet;
-`;
+const App = () => {
+    const [currentPage, setCurrentPage] = useState("home")
 
-export default class App extends React.Component {
-  state = {
-    homePage: "HomePage"
-  };
-  
-  chooseScreen = () => {
-    switch (this.state.homePage) {
-      case "HomePage":
-        return <HomePage />;
-      case "MatchesPage":
-        return <MatchesPage />;
-      default: 
-        return <HomePage />;
+const changePage = () => {
+    if (currentPage === "home"){
+        setCurrentPage("matches")
+    } else {
+        setCurrentPage("home")
     }
-  };
-
-
-  changeScreen = (nameScreen) => {
-    this.setState({ chooseScreen: nameScreen });
-  };
-
-  render() {
-    return (
-      <div>
-        <button onClick={() => this.changeScreen("MatchesPage")}>Matches</button>
-        <button onClick={() => this.changeScreen("HomePage")}>HomePage</button>
-        {this.chooseScreen()}
-      </div>
-    );
-  }
 }
+
+const cleanMatches = () => {
+
+}
+
+return (
+    <div>
+        {currentPage === "home" ? <HomePage /> : <MatchesPage />}
+        <button onClick={changePage}>{currentPage === "home" ? "Ir para Matches" : "Ir para Home"}</button>
+        <button onClick={cleanMatches}>Zerar Matches</button>
+    </div>
+)
+}
+
+export default App
+

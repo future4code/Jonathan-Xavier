@@ -1,9 +1,15 @@
-import React from "react"
+import { ProfileListItem } from "../../components/ProfileListItem/ProfileListItem"
+
 
 export const MatchesPage = () => {
-    return(
+    return (
         <div>
-            Matches Page
+            <div>
+                <ProfileListItem />
+                <ProfileListItem />
+                <ProfileListItem />
+                <ProfileListItem />
+            </div>
         </div>
     )
 }
