@@ -1,12 +1,12 @@
 import React from "react"
 
-import { HomePage } from "./pages/HomePage"
-import { LoginPage } from "./pages/LoginPage"
-import { CreateTripPage } from "./pages/CreateTripPage"
-import { ListTripsPage } from "./pages/ListTripsPage"
-import { TripDetailsPage } from "./pages/TripDetailsPage"
-import { ApplicationFormPage } from "./pages/ApplicationFormPage"
-import { AdminHomePage } from "./pages/AdminHomePage"
+import { HomePage } from "./pages/HomePage/HomePage"
+import { LoginPage } from "./pages/LoginPage/LoginPage"
+import { CreateTripPage } from "./pages/CreateTripPage/CreateTripPage"
+import { ListTripsPage } from "./pages/ListTripsPage/ListTripsPage"
+import { TripDetailsPage } from "./pages/TripDetailsPage/TripDetailsPage"
+import { ApplicationFormPage } from "./pages/ApplicationFormPage/ApplicationFormPage"
+import { AdminHomePage } from "./pages/AdminHomePage/AdminHomePage"
 
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
