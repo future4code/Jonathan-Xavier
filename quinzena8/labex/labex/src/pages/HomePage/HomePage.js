@@ -18,6 +18,7 @@ export const HomePage = () => {
     return (
         <Header>
             <h1>LabeX</h1>
+            <h2>Encontre as melhores viagens espaciais!</h2>
             <button onClick={goToListTripsPage}>Viagens</button>
             <button onClick={goToLoginPage}>Área Adm</button>
         </Header>
