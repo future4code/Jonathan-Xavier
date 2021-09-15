@@ -1,6 +1,6 @@
 import React from "react"
 import { useHistory } from "react-router-dom"
-import { Header } from "./styled"
+import { Body } from "./styled"
 
 export const HomePage = () => {
     
@@ -16,11 +16,11 @@ export const HomePage = () => {
 
    
     return (
-        <Header>
+        <Body>
             <h1>LabeX</h1>
             <h2>Encontre as melhores viagens espaciais!</h2>
             <button onClick={goToListTripsPage}>Viagens</button>
             <button onClick={goToLoginPage}>Área Adm</button>
-        </Header>
+        </Body>
     )
 }

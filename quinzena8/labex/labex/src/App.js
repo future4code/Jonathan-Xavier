@@ -13,6 +13,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 export default function App() {
     return (
+    <div className="App">
       <BrowserRouter>
         <Switch>
 
@@ -46,6 +47,7 @@ export default function App() {
 
         </Switch>
       </BrowserRouter>
+    </div>
     );
   }
 
