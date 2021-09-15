@@ -21,9 +21,11 @@ export const Login = () => {
             email: email,
             password: password
         }
-        axios.post(`https://us-central1-labenu-apis.cloudfunctions.net/labeX/:jonathan/login, body`)
+        axios.post('https://us-central1-labenu-apis.cloudfunctions.net/labeX/jonathan-xavier/login', body)
             .then((response) => {
-            
+                
+            }).catch((error) => {
+                
             })
     };
 

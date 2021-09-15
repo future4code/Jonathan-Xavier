@@ -13,7 +13,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 export default function App() {
     return (
-    <div className="App">
+    <div className=  "App">
       <BrowserRouter>
         <Switch>
 

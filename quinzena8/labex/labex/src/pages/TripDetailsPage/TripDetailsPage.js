@@ -1,20 +1,17 @@
+import { useEffect } from "react";
 import React from "react"
-import { useHistory } from "react-router-dom"
+import axios from 'axios'
 
 export const TripDetailsPage = () => {
+    useEffect(() => {
+        axios.get("https://us-central1-labenu-apis.cloudfunctions.net/labeX/jonathan-xavier/trip/NoIFVcOiSgTKTIPVZwXS")
+        .then((response) => {
 
-    const history = useHistory()
+        }).catch(() => {
 
-    const goToBack = () => {
-        history.goBack()
-    }
-
-    return (
-        <div>
-            <p>TripDetailsPage</p>
-            <button onClick={goToBack}>Voltar</button>
-            <button>Aprovar</button>
-            <button>Reprovar</button>
-        </div>
-    )
+        })
+    }, [])
+    return <div>
+                <h1>Detalhes das viagens</h1>
+            </div>
 }

@@ -3,8 +3,11 @@ import styled from "styled-components"
 
 
 export const Body = styled.div`
-    background-image: url();
-    display: flex;
+    background-color: violet;
+    display: grid;
+
+    
     align-items: center;
     justify-content: center;
+    padding: 0%;
 `
