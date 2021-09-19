@@ -8,12 +8,18 @@ export const ApplicationFormPage = () => {
     const goToBack = () => {
         history.goBack()
     }
+
+    const goToApplicationTrip = () => {
+        history.push("/trips/list")
+        alert("Inscrição concluida, aguarde contato")
+    }
     
     return (
         <div>
             <p>ApplicationFormPage</p>
             <button onClick={goToBack}>Voltar</button>
-            <button>Enviar</button>
+            <button onClick={goToApplicationTrip}>Enviar</button>
         </div>
     )
 }
+

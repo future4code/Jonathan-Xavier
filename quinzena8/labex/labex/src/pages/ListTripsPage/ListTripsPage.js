@@ -1,5 +1,7 @@
 import React from "react"
 import { useHistory } from "react-router-dom"
+import { Body } from "../ListTripsPage/styled"
+import { Container } from "../LoginPage/styled"
 
 export const ListTripsPage = () => {
 
@@ -10,10 +12,12 @@ export const ListTripsPage = () => {
     }
 
     return (
-        <div>
-            <p>ListTripsPage</p>
-            <button onClick={goToBack}>Voltar</button>
-            <button>Inscrever-se</button>
-        </div>
+        <Body>
+            <Container>
+                <p>ListTripsPage</p>
+                <button onClick={goToBack}>Voltar</button>
+                <button>Inscrever-se</button>
+            </Container>
+        </Body>
     )
 }
